@@ -6,21 +6,28 @@ const rockSwitch = document.getElementById(".rock-switch");
 const paperSwitch = document.getElementById(".paper-switch");
 const scissorSwitch = document.getElementById(".scissor-switch"); 
 
-const rps = 0;
+let rps = 0;
 
 function playerSelection() {
     document.querySelector('#rock-button button').addEventListener('click', () => {
-        rps++;
+        rps = 1;
+        console.log("rock");
     })
     document.querySelector('#paper-button button').addEventListener('click', () => {
-        rps + 2; 
+        rps = 2; 
+        console.log("paper");
     })
     document.querySelector('#scissor-button button').addEventListener('click', () => {
-        rps + 3; 
+        rps = 3; 
+        console.log("scissor");
     })
 };
 playerSelection();
 
 if (rps = 1) {
-    html.style.backgroundcolor = "purple";
+    alert("your selection is rock!")
+} else if (rps = 2) {
+    alert("your selection is paper")
+} else (rps = 3) {
+    alert("your selection is scissors")
 }
