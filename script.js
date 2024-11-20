@@ -1,33 +1,37 @@
 const rockSelector = document.querySelector(".rock-button");
 const paperSelector = document.querySelector(".paper-button");
 const scissorSelector = document.querySelector(".scissor-button"); 
-
 const rockSwitch = document.getElementById(".rock-switch");
 const paperSwitch = document.getElementById(".paper-switch");
 const scissorSwitch = document.getElementById(".scissor-switch"); 
 
-let rps = 0;
+let selection = 0;
 
 function playerSelection() {
-    document.querySelector('#rock-button button').addEventListener('click', () => {
-        rps = 1;
-        console.log("rock");
-    })
-    document.querySelector('#paper-button button').addEventListener('click', () => {
-        rps = 2; 
-        console.log("paper");
-    })
-    document.querySelector('#scissor-button button').addEventListener('click', () => {
-        rps = 3; 
-        console.log("scissor");
-    })
-};
+    document.querySelector('.rock-button button').addEventListener('click', () => {
+        selection === 1; 
+        rockSelector();
+    });
+    document.querySelector('.paper-button button').addEventListener('click', () => {
+        selection === 2;
+        paperSelector();
+    });
+    document.querySelector('.scissor-button button').addEventListener('click', () => {
+        selection === 3;
+        scissorSelector();
+    });
+}
 playerSelection();
 
-if (rps = 1) {
-    alert("your selection is rock!")
-} else if (rps = 2) {
-    alert("your selection is paper")
-} else (rps = 3) {
-    alert("your selection is scissors")
-}
+function rockSelector() {
+    alert('your slection is rock');
+};
+
+function paperSelector() {
+    alert('your selection is paper');
+};
+
+function scissorSelector() {
+    alert('your selection is scissors');
+};
+
