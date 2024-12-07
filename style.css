@@ -1,5 +1,8 @@
 html, body {
     margin: 0%; 
+    background-image: linear-gradient(to right, #304352 , #d7d2cc);
+    font-family: cursive;
+
 } 
 
 .pics {
@@ -9,8 +12,9 @@ html, body {
 }
 
 img {
-    height: 300px;
-    width: 300px; 
+    height: 125px;
+    width: 125px;
+    cursor: pointer;
 }
 
 .buttons {
@@ -20,17 +24,41 @@ img {
 }
 
 button {
-    background-color: white;
-    color: black; 
+    color: white;
+    border-color: white; 
     display: flex; 
     justify-content: center;
     transition-duration: 1s;
     margin: 3%; 
 }
+.rock  {
+    transition: 0.3s ease;
+}
 
-button:hover {
-    background-color: black;
-    color: white; 
+.rock:hover {
+   transform: scale(1.05);
+   height: 250px;
+   width: 250px;
+}
+
+.paper {
+    transition: 0.3s ease;
+}
+
+.paper:hover {
+    transform: scale(1.05);
+    height: 250px;
+    width: 250px;
+}
+
+.scissors  {
+    transition: 0.3s ease;
+}
+
+.scissors:hover {
+    transform: scale(1.05);
+    height: 250px;
+    width: 250px;
 }
 
 .head {
@@ -38,6 +66,66 @@ button:hover {
     width: 100%;
     height: 90px; 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     padding: 0%;
+    border: solid;
+    border-color: black;
 }
+
+p {
+    text-align: center;    
+}
+
+h1 {
+    text-align: center;
+}
+
+.reset-button {
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.title:hover {
+    color: white;
+}
+
+button {
+    color: black;
+    cursor: pointer;
+}
+
+div p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.computer-display {
+    margin-top: 5%;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.computer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    margin-left: 1%;
+}
+
+p:hover {
+    color: white; 
+}
+
+h3:hover {
+    color: white;
+}
+
+
