@@ -10,30 +10,23 @@
     <div class="header">
         <div class="head">
             <div class="title"><h1>Rock Paper Scissors Game</h1></div>
+            <p>Score: <span id="player-score">Player: 0</span></p>
+            <p>Score: <span id="computer-score">Computer: 0</span></p>
         </div>
-        <div class="start">
-            <div class="start-button" id="start-switch"><button>Start:</button></div>
-        </div>
-        <div class="score">
-            <div class="score-container" id="score-display">Score:</div>
+<h3> Participate in an epic battle against Artificial Intelligence in a classic game of Rock Paper Scissors!</h3>
+        <div class="reset">
+            <p>Make your Selection:</p>
+            <div class="reset-button" id="reset-button"><button>Reset Game</button></div>
         </div>
     </div>
-        <div class="pics">
-            <div class="rock-img"><img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F3bdb2575-9a92-42f8-8472-bb78c7bd118a_720x405.jpeg" alt=""></div>
-            <div class="scissor-img"><img src="https://cdn.images.fecom-media.com/FE00015871/images/Classmates_School_Scissors__Right_Handed__Pack_of_121426638_e8uXEwmmiE.jpg?width=578&height=578&scale=UpscaleCanvas&anchor=MiddleCenter" alt=""></div>
-            <div class="paper-img"><img src="https://worldpapermill.com/wp-content/uploads/2019/02/what-is-paper-by-parason-machinery.jpg" alt=""></div>
-        </div>
         <div class="buttons">
-            <div class="rock-button" id="rock-switch">
-                <button>Rock</button>
-            </div>
-            <div class="paper-button" id="paper-switch">
-                <button>Paper</button>
-            </div>
-            <div class="scissor-button" id="scissor-switch">
-                <button>Scissors</button>
-            </div>
+           <img class="rock" id="rock-selector" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1bee66ba-7191-4b0c-9f0b-d43ea813cb5a/dfmtaji-296c0c8e-95e9-45e8-9c45-b24347ac99ab.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFiZWU2NmJhLTcxOTEtNGIwYy05ZjBiLWQ0M2VhODEzY2I1YVwvZGZtdGFqaS0yOTZjMGM4ZS05NWU5LTQ1ZTgtOWM0NS1iMjQzNDdhYzk5YWIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.r4x0_sk7ZQxrfzVcpJL1pznzhnUs4vHBuPis8C5ulNs" alt="the rock"></img>
+           <img class="paper" id="paper-selector" src="https://static.vecteezy.com/system/resources/thumbnails/018/743/042/small_2x/white-ripped-piece-of-paper-isolated-on-transparent-background-file-png.png" alt="">paper</img>
+           <img class="scissors" id="scissors-selector" src="https://clipart-library.com/new_gallery/907044_scissor-clip-art-png.png" alt="">safety scissors</img>
         </div>
-        <script src="script.js"></script>
+    <div class="computer-display" id="computer-choic-area">Computer Choice:</div>
+    <div class="computer-img" id="computer-pic-choice"><img id="computerChoiceImage" style="display: none;" alt="Computer's choice">
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
